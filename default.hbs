@@ -33,7 +33,13 @@
 
     <link rel="stylesheet" href="{{asset 'css/b3a55bb9.main.min.css'}}"/>
 
+    <link rel="stylesheet" href="{{asset 'css/justifiedGallery.min.css'}}"/>
+    <link rel="stylesheet" href="{{asset 'css/colorbox.css'}}"/>
+
+
     <script src="{{asset 'js/8fe6056b.head-scripts.min.js'}}"></script>
+    
+
 
     {{ghost_head}}
   </head>
@@ -53,8 +59,28 @@
     </main>
 
     {{ghost_foot}}
-
+    
     <script src="{{asset 'js/56c2364f.foot-scripts.min.js'}}"></script>
+    <script src="{{asset 'js/jquery.justifiedGallery.min.js'}}"></script>
+    <script src="{{asset 'js/jquery.colorbox-min.js'}}"></script>
+    
+    <script type="text/javascript">
+  
+    $("#mygallery").justifiedGallery({
+    'usedSuffix':'lt240',
+    'rel':'colorbox',
+    'justifyLastRow':true, 
+    'rowHeight':210, 
+    'fixedHeight':false, 
+    'lightbox':true, 
+    'captions':true, 
+    'margins':1
+});
+</script>
+
+<script>
+    jQuery('a.galleriet').colorbox();
+</script>
 
     <script type="text/javascript">
       {{> custom/config}}
@@ -73,5 +99,7 @@
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
       }());
     </script>
+    
+</script>
   </body>
 </html>
