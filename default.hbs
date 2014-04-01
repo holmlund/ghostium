@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{{asset 'css/b3a55bb9.main.min.css'}}"/>
 
     <link rel="stylesheet" href="{{asset 'css/justifiedGallery.min.css'}}"/>
-    <link rel="stylesheet" href="{{asset 'css/colorbox.css'}}"/>
+    <link rel="stylesheet" href="{{asset 'css/jquery.fancybox.css'}}"/>
 
 
     <script src="{{asset 'js/8fe6056b.head-scripts.min.js'}}"></script>
@@ -62,13 +62,13 @@
     
     <script src="{{asset 'js/56c2364f.foot-scripts.min.js'}}"></script>
     <script src="{{asset 'js/jquery.justifiedGallery.min.js'}}"></script>
-    <script src="{{asset 'js/jquery.colorbox-min.js'}}"></script>
+    <script src="{{asset 'js/jquery.fancybox.pack.js'}}"></script>
     
     <script type="text/javascript">
   
     $("#mygallery").justifiedGallery({
     'usedSuffix':'lt240',
-    'rel':'colorbox',
+    'rel':'group',
     'justifyLastRow':true, 
     'rowHeight':210, 
     'fixedHeight':false, 
@@ -78,9 +78,10 @@
 });
 </script>
 
-<script>
-    jQuery('a.galleriet').colorbox();
+<script type="text/javascript">
+    $(".galleriet").fancybox();
 </script>
+
 
     <script type="text/javascript">
       {{> custom/config}}
