@@ -25,6 +25,7 @@
 @import "modules/_tables.scss";
 @import "modules/_typography.scss";
 @import "modules/_misc.scss";
+@import "modules/_search.scss";
 
 //----------------------------------*\
 // PARTIALS
@@ -52,3 +53,51 @@
 
 // External
 @import "vendor/_gist.scss";
+
+.search-form {
+margin: 10px 0 0;
+width: 100%; }
+
+.search-form #search-field {
+display: block;
+margin: 0 auto;
+width: 50%;
+border: 1px solid #dddddd;
+padding: 5px;
+font-size: 14px;
+font-size: 1.4rem;
+text-align: center; }
+
+#results p {
+font-size: 14px;
+font-size: 1.4rem;
+margin: 10px 0; }
+
+#results a {
+background: #dddddd;
+color: #444444;
+display: block;
+padding: 10px;
+margin: 0 auto 10px;
+opacity: 0.8;
+width: 70%; }
+
+#results a h1 {
+font-size: 16px;
+font-size: 1.6rem;
+margin: 0 0 5px; }
+
+#results a h2 {
+font-size: 12px;
+font-size: 1.2rem; }
+
+#results a:hover {
+background: #157dfb;
+color: white;
+opacity: 1; }
+
+#results a:nth-child(even) {
+background: #eeeeee; }
+#results a:nth-child(even):hover {
+background: #157dfb;
+color: white; }
