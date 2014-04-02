@@ -63,7 +63,15 @@
     <script src="{{asset 'js/56c2364f.foot-scripts.min.js'}}"></script>
     <script src="{{asset 'js/jquery.justifiedGallery.min.js'}}"></script>
     <script src="{{asset 'js/jquery.fancybox.pack.js'}}"></script>
+    <script src="{{asset 'js/jquery.ghostHunter.min.js'}}"></script>
     
+    <script>
+    $("#search-field").ghostHunter({
+    results         : "#results",
+    onKeyUp         : true
+    });
+    </script>  
+
     <script type="text/javascript">
   
     $("#mygallery").justifiedGallery({
