@@ -66,3 +66,12 @@ background: #999; }
 #results a:nth-child(even):hover {
 background: #57a3e8;
 color: white; }
+
+.drawer-button {background:none;}
+
+.post-title
+{font-size: 52px;
+font-weight: 700;
+margin: 15px 0;
+text-align: center;
+text-transform: uppercase;}

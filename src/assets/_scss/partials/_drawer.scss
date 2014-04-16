@@ -36,7 +36,8 @@
   border: 0;
   text-align: center;
   vertical-align: middle;
-  background-color: $drawer-background-color;
+  /*background-color: $drawer-background-color;*/
+  background:none;
   color: $background-color;
   transition: opacity .3s linear;
 
