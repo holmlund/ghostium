@@ -20,6 +20,7 @@
                 <li class="post-meta-item">
                   {{#foreach tags}}
                     <span itemprop="{{#if @first}}articleSection{{else}}keywords{{/if}}"><a href="{{url}}">{{name}}</a></span>
+                    {{#if @last}} {{else}}, {{/if}}
                   {{/foreach}}
                 </li>
               {{/if}}
@@ -28,22 +29,7 @@
               </li>
             </ul>
           </header>
-        <!--<aside class="post-side">
-            <div class="post-author">
-              {{#if author.image}}
-                <a href="{{author.website}}" class="post-author-avatar">
-                  <img src="{{author.image}}" alt="{{author.name}}">
-                </a>
-              {{/if}}
-              <div class="post-author-info">
-                <a href="{{author.website}}" class="post-author-name">
-                  {{author.name}}
-                </a>
-                <p class="post-author-bio">{{author.bio}}</p>
-              </div>
-            </div>
-          </aside>-->
-          <div itemprop="articleBody" class="post-body">
+           <div itemprop="articleBody" class="post-body">
             {{content}}
           </div>
           <footer class="post-footer">

@@ -29,18 +29,17 @@
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
-    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <!-- build:css({src,.tmp}) /assets/css/main.min.css -->
-    <link href="/assets/_components/font-awesome/css/font-awesome.css">
-    <link href="/assets/_components/nprogress/nprogress.css">
-    <link href="/assets/_components/prism/themes/prism.css">
-    <link href="/assets/css/style.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="{{asset 'css/b3a55bb9.main.min.css'}}"/>
 
-    <!-- build:js /assets/js/head-scripts.min.js -->
-    <script src="/assets/_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <link rel="stylesheet" href="{{asset 'css/justifiedGallery.min.css'}}"/>
+    <link rel="stylesheet" href="{{asset 'css/jquery.fancybox.css'}}"/>
+
+
+    <script src="{{asset 'js/8fe6056b.head-scripts.min.js'}}"></script>
+    
+
 
     {{ghost_head}}
   </head>
@@ -60,16 +59,37 @@
     </main>
 
     {{ghost_foot}}
+    
+    <script src="{{asset 'js/56c2364f.foot-scripts.min.js'}}"></script>
+    <script src="{{asset 'js/jquery.justifiedGallery.min.js'}}"></script>
+    <script src="{{asset 'js/jquery.fancybox.pack.js'}}"></script>
+    <script src="{{asset 'js/jquery.ghostHunter.min.js'}}"></script>
+    
+    <script>
+    $("#search-field").ghostHunter({
+    results         : "#results",
+    onKeyUp         : true
+    });
+    </script>  
 
-    <!-- build:js /assets/js/foot-scripts.min.js -->
-    <script src="/assets/_components/fastclick/lib/fastclick.js"></script>
-    <script src="/assets/_components/nprogress/nprogress.js"></script>
-    <script src="/assets/_components/prism/prism.js"></script>
-    <script src="/assets/_components/jquery-pjax/jquery.pjax.js"></script>
-    <script src="/assets/js/drawer.js"></script>
-    <script src="/assets/js/imageLoader.js"></script>
-    <script src="/assets/js/scripts.js"></script>
-    <!-- endbuild -->
+    <script type="text/javascript">
+  
+    $("#mygallery").justifiedGallery({
+    'usedSuffix':'lt240',
+    'rel':'group',
+    'justifyLastRow':true, 
+    'rowHeight':210, 
+    'fixedHeight':false, 
+    'lightbox':true, 
+    'captions':true, 
+    'margins':1
+});
+</script>
+
+<script type="text/javascript">
+    $(".galleriet").fancybox();
+</script>
+
 
     <script type="text/javascript">
       {{> custom/config}}
@@ -88,5 +108,7 @@
       (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
       }());
     </script>
+    
+</script>
   </body>
 </html>
