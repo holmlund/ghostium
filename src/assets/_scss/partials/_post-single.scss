@@ -14,7 +14,6 @@
 .post-meta-list {
   @extend .post-item-meta-list;
   line-height: 1;
-  /*margin-bottom: 15px;*/
   font-family: $title-font-family;
   color:#AEADAD;
   text-transform:uppercase;
@@ -34,17 +33,16 @@
   font-weight: 700;
   margin: 15px 0;
   text-align: center;
-  text-transform: uppercase;}
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
-    color:#424242;
+    color: #424242;
     &:hover {
       color: inherit;
     }
-  }
+  }  
 }
-
 .post-subtitle {
   font-style: italic;
   font-family: $text-font-family;
