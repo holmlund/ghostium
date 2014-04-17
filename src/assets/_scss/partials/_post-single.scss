@@ -6,6 +6,7 @@
 
 .post-container {
   position: relative;
+  margin-top: 50px;
 }
 
 .post-header {}
@@ -13,22 +14,31 @@
 .post-meta-list {
   @extend .post-item-meta-list;
   line-height: 1;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   font-family: $title-font-family;
+  color:#AEADAD;
+  text-transform:uppercase;
+  text-align:center;
+  margin-bottom:50px;
 }
 
 .post-meta-item {
   @extend .post-item-meta-item;
   font-size: 13.5px;
+
 }
 
 .post-title {
   line-height: 1;
   padding-bottom: 15px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;}
 
   a {
     text-decoration: none;
-
+    color:#424242;
     &:hover {
       color: inherit;
     }

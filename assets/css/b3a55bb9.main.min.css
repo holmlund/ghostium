@@ -15,12 +15,12 @@ width: 100%;
 #search-field {
 display: block;
 margin: 0 auto;
-width: 70%;
+width: 60%;
 background-color:#909090;
 margin-top:20px;
 background
 font-size: 14px;
-font-size: 1.4rem;
+font-size: 1.0rem;
 text-align: center;
 border: none; }
 
@@ -70,8 +70,20 @@ color: white; }
 .drawer-button {background:none;}
 
 .post-title
-{font-size: 52px;
+{
 font-weight: 700;
 margin: 15px 0;
 text-align: center;
 text-transform: uppercase;}
+
+.post-meta-list {color:#AEADAD;text-transform:uppercase;text-align:center;margin-bottom:50px;}
+
+a {color:#424242;}
+
+.post-container {
+    margin-top: 50px;}
+
+.wrapper {background-color:#fefefe;}
+
+body {font-family: "Lora", Georgia, Cambria, "Times New Roman",
+  Times, serif;}
