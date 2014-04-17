@@ -83,6 +83,8 @@ a {color:#424242;}
 .post-container {
     margin-top: 50px;}
 
+.post-item-title a {text-transform: uppercase;color:#424242;}
+
 .wrapper {background-color:#fefefe;}
 
 body {font-family: "Lora", Georgia, Cambria, "Times New Roman",
