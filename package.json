@@ -1,21 +1,21 @@
 {
-  "name": "ghostium",
-  "version": "2.1.1",
-  "description": "A Ghost theme focused on content based on Medium design/ux",
-  "url": "http://ghostium.oswaldoacauan.com/",
+  "name": "holmlundium",
+  "version": "2.1.2",
+  "description": "A fork of https://github.com/oswaldoacauan/ghostium by Oswaldo Acauan",
+  "url": "https://github.com/holmlund/ghostium/",
   "copyright": "2013",
   "license": "MIT",
   "author": {
-    "name": "Oswaldo Acauan",
-    "email": "hello@oswaldoacauan.com",
-    "url": "http://oswaldoacauan.com"
+    "name": "David Holmlund",
+    "email": "david.holmlund@gmail.com",
+    "url": "http://davidholmlund.se"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:oswaldoacauan/ghostium.git"
+    "url": "git@github.com:holmlund/ghostium.git"
   },
   "bugs": {
-    "url": "https://github.com/oswaldoacauan/ghostium/issues"
+    "url": "https://github.com/holmlund/ghostium/issues"
   },
   "keywords": [
     "ghost",

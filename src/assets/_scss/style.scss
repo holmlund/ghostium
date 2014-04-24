@@ -25,7 +25,8 @@
 @import "modules/_tables.scss";
 @import "modules/_typography.scss";
 @import "modules/_misc.scss";
-@import "modules/_search.css";
+@import "modules/_search.scss";
+@import "modules/_gallery.scss";
 
 //----------------------------------*\
 // PARTIALS
@@ -50,9 +51,6 @@
 
 @import "vendor/_nprogress.scss";
 @import "vendor/_prism.scss";
-@import "vendor/jquery.fancybox.css";
-@import "vendor/justifiedgallery.css";
 
 // External
 @import "vendor/_gist.scss";
-
