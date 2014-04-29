@@ -98,7 +98,7 @@
 .drawer-list-item {
   font-family: $title-font-family;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 14px;
   color: $drawer-text-color;
   line-height: 1;
 
@@ -117,6 +117,7 @@
     text-decoration: none;
     transition: color .3s;
     -webkit-backface-visibility: hidden;
+    text-transform: uppercase;
 
     &:before {
       content:'';
@@ -144,7 +145,7 @@
       color: $drawer-text-color;
       vertical-align: sub;
       text-align: left;
-      font-size: 22px;
+      font-size: 27px;
       width: 1.2857142857142858em; //fixed width icon
     }
   }
